@@ -9,7 +9,7 @@ try:
     ot_hours = int(ot_hours)
     late_days = int(late_days)
 except ValueError:
-    print("please input only integer")
+    print("please input only integer upper")
     exit()
 
 

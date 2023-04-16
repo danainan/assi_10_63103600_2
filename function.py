@@ -1,6 +1,6 @@
 def validate_input(work_days, ot_hours, late_days):
     if not all(isinstance(x, int) and x >= 0 for x in [work_days, ot_hours, late_days]):
-        return "please input only integer"
+        return "please input only integer upper 0"
     elif not 0 <= int(work_days) <= 30:
         return "work_days must be between 0 and 30"
     elif not 0 <= int(ot_hours) <= work_days*3:
